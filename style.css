@@ -118,10 +118,22 @@ input[type="text"], input[type="email"], input[type="password"] {
 		padding: 5px 10px;
 	}
 
+	.radio-group {
+		display: flex;
+	}
 
+	.radio-group div {
+		flex: 1	;
+	}
 
+	.radio-group label {
+		color:#666;
+		cursor:pointer;
+	}
+	
 	@media only screen and (max-width: 500px) {
 		.row{
 		  flex-direction:column; 
 		}
 	}
+
