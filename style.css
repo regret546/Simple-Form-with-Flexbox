@@ -102,7 +102,10 @@ label {
 	font-weight: 500;
 }
 
-input[type="text"], input[type="email"], input[type="password"] {
+input[type="text"],
+input[type="email"], 
+input[type="password"], 
+select {
 	font-size: 18px;
 	height: 34px;
 	padding: 0px 10px;
@@ -118,18 +121,34 @@ input[type="text"], input[type="email"], input[type="password"] {
 		padding: 5px 10px;
 	}
 
-	.radio-group {
+	.radio-group,
+	.checkbox-group,
+	.range-group {
 		display: flex;
 	}
 
-	.radio-group div {
+	.radio-group div, 
+	.checkbox-group div,
+	.range-group input {
 		flex: 1	;
 	}
 
-	.radio-group label {
+	.radio-group label, 
+	.checkbox-group label{
 		color:#666;
 		cursor:pointer;
+		
 	}
+
+	.range-group label {
+		margin-left: 10px;
+		background-color: #1BBA93;
+		color: white;
+		border-radius: 5px;
+		padding: 5px;
+		font-size: 17px;
+		text-align: center;
+	  }
 	
 	@media only screen and (max-width: 500px) {
 		.row{
