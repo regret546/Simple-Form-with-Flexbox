@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,46 +91,68 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
+
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 html {
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
+	box-sizing: border-box;
+	/* Opera/IE 8+ */
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
 	height: 100vh;
 }
 
 #registration-page {
-    height: 100vh;
-    background: #78a7ba; 
+	background: #78a7ba;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	overflow: scroll;
+	
 }
 
 .signup-form {
@@ -71,6 +161,7 @@ html {
 	background-color: #EFF0F1;
 	border-radius: 10px;
 	border: 1px solid #999;
+	overflow: hidden;
 }
 
 .form-header {
@@ -90,8 +181,8 @@ html {
 }
 
 .input-group {
-    flex:1;  
-    display: flex;
+	flex: 1;
+	display: flex;
 	flex-direction: column;
 	min-width: 0;
 	margin: 10px 5px;
@@ -105,7 +196,7 @@ label {
 }
 
 input[type="text"],
-input[type="email"], 
+input[type="email"],
 input[type="password"],
 input[type="file"],
 input[type="number"],
@@ -119,64 +210,64 @@ select {
 	border-radius: 4px;
 	background: white;
 	outline: none;
-	}
+}
 
-	.form-body {
-		background: white;
-		padding: 5px 10px;
-	}
+.form-body {
+	background: white;
+	padding: 5px 10px;
+}
 
-	.radio-group,
-	.checkbox-group,
-	.range-group {
-		display: flex;
-	}
+.radio-group,
+.checkbox-group,
+.range-group {
+	display: flex;
+}
 
-	.radio-group div, 
-	.checkbox-group div,
-	.range-group input {
-		flex: 1	;
-	}
+.radio-group div,
+.checkbox-group div,
+.range-group input {
+	flex: 1;
+}
 
-	.radio-group label, 
-	.checkbox-group label{
-		color:#666;
-		cursor:pointer;
-		
-	}
-	.range-group label {
-		margin-left: 10px;
-		background-color: #1BBA93;
-		color: white;
-		border-radius: 5px;
-		padding: 5px;
-		font-size: 17px;
-		text-align: center;
-	  }
+.radio-group label,
+.checkbox-group label {
+	color: #666;
+	cursor: pointer;
 
-	textarea {
-		resize: none;
-		height: 100px;
-	}
+}
 
-	.form-footer {
-		display:flex;
-		justify-content: flex-end;
-	}
+.range-group label {
+	margin-left: 10px;
+	background-color: #1BBA93;
+	color: white;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 17px;
+	text-align: center;
+}
 
-	.btn {
-		padding:10px 20px;
-		background-color: #1BBA93;
-		font-size:17px;
-		border:none;
-		border-radius:5px;
-		color:#bcf5e7;
-		cursor:pointer;
-	}
+textarea {
+	resize: none;
+	height: 100px;
+}
 
-	@media only screen and (max-width: 500px) {
-		.row{
-		  flex-direction:column; 
-		}
-	}
+.form-footer {
+	display: flex;
+	justify-content: flex-end;
+}
 
+.btn {
+	padding: 10px 20px;
+	background-color: #1BBA93;
+	font-size: 17px;
+	border: none;
+	border-radius: 5px;
+	color: #bcf5e7;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+	.row {
+		flex-direction: column;
+	}
+}
